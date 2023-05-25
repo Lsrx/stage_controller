@@ -3,50 +3,56 @@ Este arquivo fornece instruções sobre como executar o código no seu ambiente 
 
 ## Pré-requisitos
 - Linguagem de programação: [Python 3]
-- Versão Ubunto: [20.04]
+- Versão Ubuntu: [20.04]
 - Versão do ROS: [Noetic]
 
-## Comandos para executar o programa 
-### Preparando ambiente do ROS
-1. Em um terminal, navegue para o repositório catkin_ws:
+## Comandos báicos
+### Preparando o ambiente ROS
+1. Abra o terminal e navegue para o repositório catkin_ws:
+
 ```sheel
 $ cd catkin_ws/
 ```
-2. Inicialize e configure o ambiente:
+2. Realize a iniciacao e configuracao do ambiente através da seguinte linha:
+
 ```sheel
 ~/catkin_ws$ source devel/setup.bash 
 ```
-3. Copila os pacotes baixados( executar esse comando só quando baixa o pacote, não e necessário executar toda vez que executa a simulação):
+3. Atraves do comando catkin_make vamos realizar a compilacao dos pacotes para nossa primeira execucao (depois da primeira nao precisa fazer mais)
+
 ```sheel
 ~/catkin_ws$ catkin_make
 ```
-### Deixando o arquivo executavel
-4. Vamos navegar até a pasta de /scripts para isso vamos executar o seguinte comando:
+### Gerando o executavel do script
+4. Acesse a pasta de scripts e execute o comando:
+
 ```sheel
 ~/catkin_ws$ cd src/stage_controller/scripts/
 ```
-5. Depois disso vamos executar o comando que deixa o arquivo stage_controller.py executavel:
+5. Utilize a seguinte linha de codigo para transformar o arquivo .py em um arquivo executavel:
 
 ```sheel
 ~/src/stage_controller/scripts/$ chmod +x stage_controller.py
 ```
-### Rodando Simulação
-6. Inicialize o ros:
+### Realizando a simulacao
+
+6. Primeiro vamos inicializar o ROS core:
+
 ```sheel
 ~/catkin_ws$ roscore
 ```
-7. Em outro terminal sem fechar o primeiro execute os comandos 1 e 2 para carregar o ambiente e en seguida execute o seguinte comando para abrir a janela de simulação:
+
+7. Abra outro terminal e inicialize o ROS com stage_controler atraves do lancher (lembrar que nao se deve fechar os terminais abertos):
 ```sheel
 ~/catkin_ws$ roslaunch stage_controller launcher.launch
 ```
-Assim vai abrir a janela a seguir: 
-![Screenshot from 2023-05-24 13-16-06](https://github.com/jardelprad0/stage_controller/assets/61805544/6bb63beb-8d87-40d5-b465-5792dfd39e88)
 
-8. Com isso feito vamos abrir outro terminal e executar os comandos 1 e 2, depois vamos executar nosso codigo para fazer o robo se movimentar:
+8. Abra outra janela de terminal e execute o stage_controler com o codigo desenvolvido:
 ```sheel
 ~/catkin_ws$ rosrun stage_controller stage_controller.py
 ```
 
-## Pronto! Seu robô esta se movendo até o 'target' definido no código :)
+9. O robo se movera ate o goal (destino) designado via codigo, para alterar o goal voce deve realizar a pausa do ultimo terminal e modificar o script stage_controller.py com o goal desejado. Apos isso salve o codigo e repita a passo 8.
 
-### Link do Vídeo  : https://youtu.be/XEvFqXbvWAI
+## Ate o momento nao consegui recordar o teste no meu computador dado que a VM nao esta aguentando gravar o video (nao ha memoria suficiente para rodar o ROS e gravar tela numa VM).
+
