@@ -1,7 +1,6 @@
-# stage_controller
-Este arquivo fornece instruções sobre como executar o código no seu ambiente local.
+# Trabalho 1
 
-## Pré-requisitos
+## Recursos utlizados:
 - Linguagem de programação: [Python 3]
 - Versão Ubuntu: [20.04]
 - Versão do ROS: [Noetic]
