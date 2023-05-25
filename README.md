@@ -6,7 +6,8 @@ Este arquivo fornece instruções sobre como executar o código no seu ambiente 
 - Versão Ubuntu: [20.04]
 - Versão do ROS: [Noetic]
 
-## Comandos báicos
+## Passo a passo para utilizar o codigo desenvolvido.
+
 ### Preparando o ambiente ROS
 1. Abra o terminal e navegue para o repositório catkin_ws:
 
