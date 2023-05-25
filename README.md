@@ -1,4 +1,4 @@
-# Trabalho 1
+# Trabalho 1 - Lucas Silva, 157138
 
 ## Recursos utlizados:
 - Linguagem de programação: [Python 3]
