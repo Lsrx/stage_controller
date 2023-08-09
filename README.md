@@ -1,5 +1,7 @@
 # Trabalho 1 - Lucas Silva, 157138
 
+Link do vídeo: https://youtu.be/t_3TuyHk1zw
+
 ## Recursos utlizados:
 - Linguagem de programação: [Python 3]
 - Versão Ubuntu: [20.04]
@@ -53,6 +55,4 @@ $ cd catkin_ws/
 ```
 
 9. O robo se movera ate o goal (destino) designado via codigo, para alterar o goal voce deve realizar a pausa do ultimo terminal e modificar o script stage_controller.py com o goal desejado. Apos isso salve o codigo e repita a passo 8.
-
-## Ate o momento nao consegui recordar o teste no meu computador dado que a VM nao esta aguentando gravar o video (nao ha memoria suficiente para rodar o ROS e gravar tela numa VM).
 
