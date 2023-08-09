@@ -11,6 +11,7 @@ import math
 
 laser = LaserScan()
 odometry = Odometry()
+velocity = Twist # Inicializao da variavel velocity
 
 def odometry_callback(data):
     global odometry
@@ -26,10 +27,11 @@ if __name__ == "__main__":
 
     # Inicializando variaveis
 
-    alvo_x = -0.5
-    alvo_y = -0.5
-    min_distancia = 0.4
+    alvo_x = 2
+    alvo_y = 2.5
+    min_distancia = 0.3
     distancia = 0
+
     velocity.linear.x = 0
     velocity.angular.z = 0
 
